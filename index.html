@@ -8,27 +8,39 @@
     <title>Document</title>
 </head>
 <body>
+
 <header>
-    <p>This site was designed with the WiX.com website builder. Create your web site today.</p>
-    <button>Start Now</button>
+    <div class="header-text">
+        <p>This site was designed with the WiX.com website builder. Create your web site today.</p>
+    </div>
+    <button id="header-btn">Start Now</button>
 </header>
-<nav>
-    <p id="creative_corner">creative corner</p>
-    <div id="nav-link-group">
-        <div>
-            <div style="display:inline">메인</div>
-            <div style="display:inline">인재찾기</div>
-            <div style="display:inline">일자리찾기</div>
+
+<div class="nav">
+    <div class="nav-content">
+
+        <div class="nav-title">
+            <p id="creative_corner">creative corner</p>
         </div>
-        <div>
-            <div class="icon-group">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+
+        <div class="nav-item-group">
+            <div class="nav-link-group">
+                <a href="#" class="nav-link-text">메인</a>
+                <a href="#" class="nav-link-text">인재찾기</a>
+                <a href="#" class="nav-link-text">일자리찾기</a>
+            </div>
+            <div>
+                <div class="nav-icon-group">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
             </div>
         </div>
+
     </div>
-</nav>
+</div>
+
 <div id="main">
     <div class="container" id="creative-corner">
         <div class="text-box" id="upper-text-box">
@@ -157,15 +169,89 @@
             </div>
         </div>
     </div>
-    <div class="container" id="contact">contact</div>
+    <div class="container" id="contact">
+        <div id="contact-content">
+
+            <div class="contact-title">
+                <h3> + CONTACT _ </h3>
+            </div>
+            <div class="contact-desc">
+                <h5>궁금한 내용은 언제든지 문의하세요</h5>
+            </div>
+
+            <div class="contact-group">
+                <div id="contact-box1">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <h5>info@mysite.com</h5>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <h5>02-OOO-OOOO</h5>
+                    </div>
+
+                    <div class="content-address">
+                        <h5>서울특별시 종로구 안국동</h5>
+                        <h5>OO-OO, 110-240</h5>
+                    </div>
+                    <div class="content-map">
+                        <img src="images/map.jpeg" width="400px" height="400px">
+                    </div>
+                </div>
+                <div id="contact-box2">
+                    <div class="contact-submit-desc">
+                        <h4>크리에이티브 코너와 함께</h4>
+                        <h4>끼와 재능을 펼쳐보세요!</h4>
+                    </div>
+                    <div class="contact-submit">
+                        <form>
+                            <input class="contact-submitbox" type="text" name="이름" value="이름" /><br/>
+                            <input class="contact-submitbox" type="text" name="이메일" value="이메일" /><br/>
+                            <input class="contact-submitbox" type="text" name="전화번호" value="전화번호" /><br/>
+                        </form>
+                        <form>
+                            <input class="contact-submitbox2" type="text" name="이름" value="메시지를 입력하세요."/><br/>
+                        </form>
+                    </div>
+                    <div class="btn-group">
+                        <button class="contact-btn" style="float: right;">제출</button>
+                    </div>
+                    <hr style="border: solid 5px white;">
+                    <div class="contact-submit-desc">
+                        <h4>크리에이티브 코너의</h4>
+                        <h4>놀라운 인재들을 만나보세요!</h4>
+                    </div>
+                    <div class="contact-submit">
+                        <form>
+                            <input class="contact-submitbox" type="text" name="이름" value="이름" /><br/>
+                            <input class="contact-submitbox" type="text" name="이메일" value="이메일" /><br/>
+                            <input class="contact-submitbox" type="text" name="전화번호" value="전화번호" /><br/>
+                        </form>
+                        <form>
+                            <input class="contact-submitbox2" type="text" name="이름" value="메시지를 입력하세요."/><br/>
+                        </form>
+                    </div>
+                    <div class="btn-group">
+                        <button class="contact-btn" style="float: right;">제출</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
-    <h6 style="display:inline">ⓒ 2023 WIX로 제작된 본 홈페이지에 대한 모든 권리는 OOOO(사업체명)에 귀속됩니다.</h6>
-    <h6 style="display:inline">info@mysite.com | 서울특별시 종로구 안국동 OO-OO, 110-240</h6>
-    <div>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
+    <div class="footer-content">
+        <div class="footer-desc">
+            <h6 style="display:inline">ⓒ 2023 WIX로 제작된 본 홈페이지에 대한 모든 권리는 OOOO(사업체명)에 귀속됩니다.</h6>
+        </div>
+        <div class="footer-location">
+            <h6 style="display:inline">info@mysite.com | 서울특별시 종로구 안국동 OO-OO, 110-240</h6>
+        </div>
+        <div class="footer-icon-group">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
     </div>
 </footer>
 </body>

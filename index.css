@@ -7,42 +7,101 @@ h3 {
 
 h4 {
     font-size: 30px;
+    color: white;
 }
 
 h5 {
     font-size: 20px;
 }
 
-/* header start*/
+h6 {
+    font-size: 12px;
+}
+
+/*header start*/
 header {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #eff1f2;
+    border-bottom: 3px solid #a0138e;
+    text-align: center;
+    z-index: 9999;
 }
+
+.header-text {
+    margin-right: 10px;
+}
+
+#header-btn {
+    width: 100px;
+    background-color: Transparent;
+    border: 1px solid #a0138e;
+    color: #a0138e;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
 /* header end*/
 
 /* nav bar start*/
-nav {
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.nav-content {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-item-group {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    flex-direction: row;
+}
+
+.nav-link-group {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: auto;
 }
+
+.nav-link-text:hover {
+    color: #FCD307;
+    transition: 0.5s;
+}
+
+.nav-link-text:first-child {
+    color: #FCD307;
+}
+
+.nav-link-text {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
 #creative_corner{
-}
-#nav-link-group{
-    display: flex;
-    /*flex-direction: row-reverse;*/
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: auto;
-    flex: 1 1;
-}
-.icon-group{
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: auto;
-    flex: 1 1;
+    font-size: 35px;
 }
 
 /* nav bar end*/
@@ -102,6 +161,7 @@ nav {
     margin: 4px;
     cursor: pointer;
 }
+
 /* creative-corner end*/
 
 /* yellow-plus start*/
@@ -127,16 +187,19 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
+
 #yellow-box > .item-groups > .items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #yellow-box > .item-groups > .items .item-text {
     margin-top: 20px;
     text-align: center;
 }
+
 #yellow-box > .item-groups > .items img {
     width: 64px;
     height: auto;
@@ -167,13 +230,14 @@ nav {
 }
 
 .about-us-title {
-    margin-bottom: 20px;
+    margin: 50px 0 20px 0;
 }
 
 .about-us-desc {
     margin-bottom: 60px;
-    text-align: center;
+    margin-left: 50px;
 }
+
 .people-group {
     display: flex;
     justify-content: space-between;
@@ -188,6 +252,7 @@ nav {
     margin-bottom: 60px;
 
 }
+
 .people-picture img {
     width: 213px;
     height: auto;
@@ -195,6 +260,7 @@ nav {
     filter: grayscale(100%);
     margin-bottom: 40px;
 }
+
 .about-us-text-content-group {
     display: flex;
     justify-content: space-between;
@@ -204,9 +270,93 @@ nav {
 .about-us-text-content:first-child {
     margin-right: 40px;
 }
+
 /* about-us end*/
 
 /*contact start*/
+#contact {
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+    width: 100%;
+    height: auto;
+}
+
+#contact-content {
+    width: 70%;
+}
+
+.contact-title {
+    margin: 50px 0 20px 0;
+    color: white;
+}
+
+.contact-desc {
+    margin-bottom: 60px;
+    margin-left: 50px;
+    color: white;
+}
+
+.contact-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact-box1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+.contact-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.content-address {
+    margin: 80px 0px 80px 0px;
+    color: white;
+}
+
+.content-map {
+    margin-bottom: 150px;
+}
+
+#contact-box2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+.content-submit-desc {
+    color: white;
+
+}
+
+.contact-submit {
+    display: flex;
+    margin-top: 50px;
+}
+
+.contact-submitbox {
+    width: 300px;
+    height: 40px;
+    margin: auto 10px 5px auto;
+}
+
+.contact-submitbox2 {
+    width: 300px;
+    height: 130px;
+}
+
+.contact-btn {
+    background-color: #FCD307;
+    width: 150px;
+    height: 40px;
+}
 
 /*contact end*/
 
@@ -215,8 +365,18 @@ nav {
 
 /* footer start*/
 footer {
-    margin: 0px 200px 0px 200px;
     display: flex;
-    justify-content: space-around;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
 }
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
 /* footer end*/
