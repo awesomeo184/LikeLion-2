@@ -1,13 +1,53 @@
 @import 'reset.css';
 
+
+h3 {
+    font-size: 60px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+/* header start*/
 header {
     display: flex;
 }
+/* header end*/
 
+/* nav bar start*/
 nav {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: auto;
+}
+#creative_corner{
+}
+#nav-link-group{
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: auto;
+    flex: 1 1;
+}
+.icon-group{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: auto;
+    flex: 1 1;
 }
 
+/* nav bar end*/
+
+/* main start*/
 #main {
 
 }
@@ -16,6 +56,167 @@ nav {
     display: flex;
 }
 
-footer {
+/* creative-corner start*/
+#creative-corner {
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background-image: url("images/earth.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+}
+
+.text-box {
+    color: white;
+    margin-left: 200px;
+}
+
+#upper-text-box {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+#lower-text-box {
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    margin-left: 200px;
+}
+
+.creative-corner-btn:hover {
+    border: 2px solid #FCD307;
+    color: #FCD307;
+}
+
+.creative-corner-btn {
+    width: 159px;
+    height: 42px;
+    background-color: Transparent;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+/* creative-corner end*/
+
+/* yellow-plus start*/
+#yellow-plus {
+    margin-left: 30px;
+    width: auto;
+    height: 40px;
+}
+
+#yellow-box {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    background-color: #FCD307;
+    width: 100%;
+    height: 350px;
+}
+
+#yellow-box .item-groups {
+    display: flex;
+    position: relative;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#yellow-box > .item-groups > .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#yellow-box > .item-groups > .items .item-text {
+    margin-top: 20px;
+    text-align: center;
+}
+#yellow-box > .item-groups > .items img {
+    width: 64px;
+    height: auto;
+}
+
+.yellow-box-item-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    background-color: white;
+}
+
+/* yellow-plus start*/
+
+/* about-us start*/
+#about-us {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+#about-us-content {
+    width: 70%;
+}
+
+.about-us-title {
+    margin-bottom: 20px;
+}
+
+.about-us-desc {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.people-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
 
 }
+.people-picture img {
+    width: 213px;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-bottom: 40px;
+}
+.about-us-text-content-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.about-us-text-content:first-child {
+    margin-right: 40px;
+}
+/* about-us end*/
+
+/*contact start*/
+
+/*contact end*/
+
+/* main end*/
+
+
+/* footer start*/
+footer {
+    margin: 0px 200px 0px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+/* footer end*/
